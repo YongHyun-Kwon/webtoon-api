@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: webtoon-api
+  config:
+    import: optional:classpath:application-private.yml
+
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+      jakarta:
+        persistence:
+          lock:
+            timeout: 5000
